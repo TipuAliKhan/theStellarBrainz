@@ -1,0 +1,345 @@
+$primary-color: #ee5d2b;
+$secondary-color: #f2e205;
+$white: #ffffff;
+$font: "Nunito", sans-serif;
+$font-common: #707070;
+
+$bg-red: red;
+$bg-blue: blue;
+$bg-green: green;
+
+body {
+  margin: 0;
+  font-family: $font;
+  background-color: $white;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .primary-btn {
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 25px;
+    text-align: center;
+    font-family: $font;
+    font-size: 18px;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #58585870;
+  }
+
+  .blue-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #0470e4bf;
+  }
+  .highlight {
+    color: $primary-color;
+  }
+  h2.title {
+    font-family: $font;
+    font-size: 22px;
+    text-align: center;
+  }
+}
+.top-nav {
+  border-bottom: 1px solid $font-common;
+}
+
+.nav-cta {
+  position: relative;
+  height: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0 10px;
+    background-color: $primary-color;
+
+    li {
+      img {
+        width: 10px;
+        height: auto;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 0;
+
+  .logo {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.35;
+    text-align: left;
+    color: $font-common;
+  }
+
+  .call-cta {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      margin: 0 10px;
+    }
+
+    .contact-number {
+      p {
+        font-family: inherit;
+        color: $font-common;
+        font-size: 12px;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+        font-family: inherit;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+nav {
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      padding: 18px 40px;
+      cursor: pointer;
+
+      a {
+        font-family: $font;
+        font-size: 18px;
+        line-height: 1.37;
+        text-align: left;
+        color: #707070;
+      }
+    }
+
+    li.active {
+      background-color: #f6f6f6;
+      border-top: 2px solid $primary-color;
+    }
+  }
+}
+
+#banner {
+  background-image: url("/assets/banner.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  color: $white;
+
+  .title {
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+
+  .quote {
+    font-size: 40px;
+    width: 390px;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .primary-btn {
+    margin: 10px 0;
+  }
+}
+
+#banner {
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+#brand-highlight {
+  background-color: #efefef;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-us{
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+
+    .about-img,
+    .about-desc{
+      width: 50%;
+    }
+
+  }
+}
+
+#why-choose-us {
+  background-image: url("/assets/pattern.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: unset;
+  background-origin: border-box;
+  background-blend-mode: overlay;
+  color: $white;
+
+  .blue-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .card {
+        width: 33.33%;
+        box-sizing: border-box;
+        margin: 40px;
+        padding: 10px 20px;
+        text-align: center;
+
+        .img-box {
+          width: 80px;
+          height: 80px;
+          background-color: #ffffff;
+          border-radius: 100%;
+          border: 1px dashed #222222;
+          padding: 10px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img{
+            width: 70px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+#our-system{
+  background-image: url("/assets/pattern.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-blend-mode: overlay;
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    .card {
+      width: 33.33%;
+      box-sizing: border-box;
+      margin: 40px;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 25px;
+    }
+
+    .bg-red{
+      border: 1px dashed $bg-red;
+    }
+
+    .bg-blue{
+      border: 1px dashed $bg-blue;
+    }
+
+    .bg-green{
+      border: 1px dashed $bg-green;
+    }
+  }
+}
+
+// bootstrap
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &::after {
+    clear: both;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

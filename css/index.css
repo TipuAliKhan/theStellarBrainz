@@ -1,0 +1,409 @@
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+}
+
+body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body .primary-btn {
+  background-color: #ee5d2b;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 25px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+body .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #58585870;
+}
+
+body .blue-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #0470e4bf;
+}
+
+body .highlight {
+  color: #ee5d2b;
+}
+
+body h2.title {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+.top-nav {
+  border-bottom: 1px solid #707070;
+}
+
+.nav-cta {
+  position: relative;
+  height: 35px;
+}
+
+.nav-cta::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+
+.nav-cta::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
+.nav-cta ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 0 10px;
+  background-color: #ee5d2b;
+}
+
+.nav-cta ul li img {
+  width: 10px;
+  height: auto;
+}
+
+.nav-cta ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 0;
+}
+
+.brand .logo {
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.35;
+  text-align: left;
+  color: #707070;
+}
+
+.brand .call-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.brand .call-cta img {
+  margin: 0 10px;
+}
+
+.brand .call-cta .contact-number p {
+  font-family: inherit;
+  color: #707070;
+  font-size: 12px;
+  margin: 0;
+}
+
+.brand .call-cta .contact-number a {
+  text-decoration: none;
+  color: #ee5d2b;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 18px 40px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.37;
+  text-align: left;
+  color: #707070;
+}
+
+nav ul li.active {
+  background-color: #f6f6f6;
+  border-top: 2px solid #ee5d2b;
+}
+
+#banner {
+  background-image: url("/assets/banner.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  color: #ffffff;
+}
+
+#banner .title {
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+#banner .quote {
+  font-size: 40px;
+  width: 390px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#banner .primary-btn {
+  margin: 10px 0;
+}
+
+#banner .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#brand-highlight {
+  background-color: #efefef;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about-us .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+}
+
+#about-us .container .about-img,
+#about-us .container .about-desc {
+  width: 50%;
+}
+
+#why-choose-us {
+  background-image: url("/assets/pattern.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: unset;
+  background-origin: border-box;
+  background-blend-mode: overlay;
+  color: #ffffff;
+}
+
+#why-choose-us .blue-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#why-choose-us .blue-overlay .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#why-choose-us .blue-overlay .container .card {
+  width: 33.33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 40px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#why-choose-us .blue-overlay .container .card .img-box {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  border: 1px dashed #222222;
+  padding: 10px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#why-choose-us .blue-overlay .container .card .img-box img {
+  width: 70px;
+  height: auto;
+}
+
+#our-system {
+  background-image: url("/assets/pattern.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-blend-mode: overlay;
+}
+
+#our-system .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#our-system .container .card {
+  width: 33.33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 40px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+#our-system .container .bg-red {
+  border: 1px dashed red;
+}
+
+#our-system .container .bg-blue {
+  border: 1px dashed blue;
+}
+
+#our-system .container .bg-green {
+  border: 1px dashed green;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container::after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
