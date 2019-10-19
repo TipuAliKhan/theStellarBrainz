@@ -1,0 +1,2 @@
+# theStellarBrainz
+static website
