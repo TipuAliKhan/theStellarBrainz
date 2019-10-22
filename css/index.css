@@ -243,6 +243,30 @@ nav ul li.active {
           align-items: center;
 }
 
+#about-us {
+  position: relative;
+}
+
+#about-us #triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 520px solid #f2e205;
+  border-right: 250px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#about-us #triangle-bottomleft {
+  width: 0;
+  height: 0;
+  border-bottom: 450px solid #ee5d2b;
+  border-right: 850px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 #about-us .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,6 +284,10 @@ nav ul li.active {
 #about-us .container .about-img,
 #about-us .container .about-desc {
   width: 50%;
+}
+
+#about-us .container .about-img {
+  z-index: 99;
 }
 
 #about-us .container .about-desc {

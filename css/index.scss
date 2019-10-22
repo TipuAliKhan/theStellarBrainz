@@ -222,6 +222,28 @@ nav {
 }
 
 #about-us {
+  position: relative;
+
+  #triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 520px solid #f2e205;
+    border-right: 250px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 450px solid #ee5d2b;
+    border-right: 850px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -231,6 +253,11 @@ nav {
     .about-img,
     .about-desc {
       width: 50%;
+    }
+
+
+    .about-img{
+      z-index: 99;
     }
 
     .about-desc {
