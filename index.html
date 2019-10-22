@@ -9,6 +9,8 @@
     <title>The Stellar Brainz</title>
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
 </head>
 
 <body>
@@ -143,6 +145,54 @@
             </div>
         </div>
     </section>
+    <section id="parents-say">
+        <div class="blue-overlay">
+            <h2 class="title">What the parents say</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="./assets/first.png" alt="" width="100">
+                    <div class="name">John Doe</div>
+                    <div class="designation">Art Director</div>
+                    <div class="intro">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                </div>
+                <div class="card">
+                    <img src="./assets/second.png" alt="" width="100">
+                    <div class="name">John Doe</div>
+                    <div class="designation">Art Director</div>
+                    <div class="intro">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                </div>
+                <div class="card">
+                    <img src="./assets/third.png" alt="" width="100">
+                    <div class="name">John Doe</div>
+                    <div class="designation">Art Director</div>
+                    <div class="intro">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                </div>
+                <div class="card">
+                    <img src="./assets/third.png" alt="" width="100">
+                    <div class="name">John Doe</div>
+                    <div class="designation">Art Director</div>
+                    <div class="intro">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                </div>
+                <div class="card">
+                    <img src="./assets/third.png" alt="" width="100">
+                    <div class="name">John Doe</div>
+                    <div class="designation">Art Director</div>
+                    <div class="intro">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- some shit code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#parents-say .container').slick({
+                slidesToShow: 3,
+                dots: true,
+                centerMode: true,
+            });
+        });</script>
 </body>
 
 </html>
