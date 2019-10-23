@@ -5,17 +5,24 @@ $font: "Nunito", sans-serif;
 $font-common: #707070;
 $font-title: #4b4b4b;
 
-$red-border: #FF0000;
-$blue-border: #0583F2;
-$green-border: #42B84D;
-$red-bg : #FFF3F3;
-$blue-bg : #EEF6FE;
-$green-bg :  #EFFFF1;
+$red-border: #ff0000;
+$blue-border: #0583f2;
+$green-border: #42b84d;
+$red-bg: #fff3f3;
+$blue-bg: #eef6fe;
+$green-bg: #effff1;
+
+$small: 425px;
+$medium: 768px;
+$large: 1200px;
 
 body {
   margin: 0;
   font-family: $font;
   background-color: $white;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
   ul {
     margin: 0;
     padding: 0;
@@ -54,7 +61,7 @@ body {
     color: $primary-color;
   }
   h1 {
-    font-size : 1.2em;
+    font-size: 1.2em;
   }
   h2.title {
     font-family: $font;
@@ -70,7 +77,7 @@ body {
   }
 }
 .top-nav {
-  border-bottom: 1px solid #C1C1C1;
+  border-bottom: 1px solid #c1c1c1;
 }
 
 .nav-cta {
@@ -195,6 +202,7 @@ nav {
   width: 100%;
   height: 70vh;
   color: $white;
+  overflow-x: hidden;
 
   .title {
     text-transform: uppercase;
@@ -225,7 +233,7 @@ nav {
 }
 
 #brand-highlight {
-  background-color: #E2E2E2;
+  background-color: #e2e2e2;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -236,26 +244,24 @@ nav {
   }
 }
 
-#about-us{
+#about-us {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-top: 10px;
-  max-height: 350px;
-  background-image: url("../assets/pattern2.png");
-  background-repeat: repeat;
-  background-size: 70%;
+  background: url("../assets/Man-PNG-Pic.png") left top no-repeat, url("../assets/pattern.png") repeat;
+  background-size: 300px 100px, cover;
   width: 100%;
-  height: auto;
+  height: 500px;
 
   .about-img,
-  .about-desc{
+  .about-desc {
     width: 50%;
     text-align: left;
 
     .title {
-      text-align : left;
+      text-align: left;
     }
 
     p {
@@ -277,13 +283,14 @@ nav {
   width: 100%;
   height: auto;
   color: $white;
+  overflow-x: hidden;
 
   .blue-overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     .title {
       color: #ffffff;
       padding-top: 30px;
@@ -322,7 +329,7 @@ nav {
     }
   }
 }
-#our-system{
+#our-system {
   background-image: url("../assets/pattern2.png");
   background-position: center center;
   background-size: 70%;
@@ -345,7 +352,7 @@ nav {
     .card {
       width: 33.33%;
       box-sizing: border-box;
-      margin: 40px;
+      margin: 10px;
       padding: 10px 20px;
       text-align: center;
       border-radius: 25px;
@@ -381,23 +388,23 @@ nav {
       }
     }
 
-    .bg-red{
+    .bg-red {
       border: 1px dashed $red-border;
       background-color: $red-bg;
     }
 
-    .bg-blue{
+    .bg-blue {
       border: 1px dashed $blue-border;
       background-color: $blue-bg;
     }
 
-    .bg-green{
+    .bg-green {
       border: 1px dashed $green-border;
       background-color: $green-bg;
     }
 
     .theme-green {
-      color: $green-border; 
+      color: $green-border;
     }
 
     .theme-red {
@@ -419,6 +426,9 @@ nav {
   background-blend-mode: overlay;
   text-align: center;
 
+  .title {
+    color: $white;
+  }
   .container {
     display: flex;
     flex-direction: row;
@@ -428,7 +438,7 @@ nav {
     .card {
       width: 33.33%;
       box-sizing: border-box;
-      margin: 40px;
+      margin: 10px;
       padding: 30px 20px;
       text-align: center;
       border-radius: 25px;
@@ -465,7 +475,11 @@ nav {
     }
   }
 }
-
+// over-ride slick
+.slick-dots li button:before {
+  color: $white !important;
+  font-size: 10px !important;
+}
 // bootstrap
 .container {
   padding-right: 15px;
@@ -490,5 +504,46 @@ nav {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+
+// responsive
+@media only screen and (max-width: 500px) {
+  .nav-cta {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #why-choose-us {
+    .container {
+      flex-wrap: wrap;
+
+      .card {
+        min-width: 250px;
+        margin: 10px !important;
+      }
+    }
+  }
+  #our-system {
+    .container {
+      flex-wrap: wrap;
+      .card {
+        min-width: 250px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .brand {
+    .call-cta {
+      display: none;
+    }
+  }
+  #banner {
+    .quote {
+      font-size: 30px;
+      width: 90vw;
+    }
   }
 }

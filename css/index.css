@@ -2,16 +2,22 @@ body {
   margin: 0;
   font-family: "Nunito", sans-serif;
   background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 body ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 body a {
   text-decoration: none;
   cursor: pointer;
 }
+
 body .primary-btn {
   background-color: #ee5d2b;
   color: #ffffff;
@@ -22,44 +28,51 @@ body .primary-btn {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
 }
+
 body .overlay {
   width: 100%;
   height: 100%;
   background-color: #0583f28c;
 }
+
 body .blue-overlay {
   width: 100%;
   height: 100%;
   background-color: #0470e4a3;
   padding: 30px 0 10px;
 }
+
 body .highlight {
   color: #ee5d2b;
 }
+
 body h1 {
   font-size: 1.2em;
 }
+
 body h2.title {
   font-family: "Nunito", sans-serif;
   font-size: 22px;
   text-align: center;
   color: #707070;
 }
+
 body .underline {
-  border: 3px solid #FF0000;
+  border: 3px solid #ff0000;
   border-radius: 40px;
   width: 60px;
   margin-top: -5px;
 }
 
 .top-nav {
-  border-bottom: 1px solid #C1C1C1;
+  border-bottom: 1px solid #c1c1c1;
 }
 
 .nav-cta {
   position: relative;
   height: 40px;
 }
+
 .nav-cta::before {
   content: "";
   position: absolute;
@@ -71,6 +84,7 @@ body .underline {
   background-size: 20px 20px;
   background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
 }
+
 .nav-cta::after {
   content: "";
   position: absolute;
@@ -82,18 +96,29 @@ body .underline {
   background-size: 40px 20px;
   background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
 }
+
 .nav-cta ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0px 0 18px;
   background-color: #ee5d2b;
 }
+
 .nav-cta ul li img {
   width: 10px;
   height: auto;
 }
+
 .nav-cta ul li a {
   text-decoration: none;
   color: #ffffff;
@@ -101,11 +126,18 @@ body .underline {
 }
 
 .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 10px 0;
 }
+
 .brand .logo {
   font-family: "Nunito", sans-serif;
   font-size: 30px;
@@ -114,19 +146,28 @@ body .underline {
   text-align: left;
   color: #707070;
 }
+
 .brand .call-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 .brand .call-cta img {
   margin: 0 10px;
 }
+
 .brand .call-cta .contact-number p {
   font-family: inherit;
   color: #707070;
   font-size: 12px;
   margin: 0;
 }
+
 .brand .call-cta .contact-number a {
   text-decoration: none;
   color: #ee5d2b;
@@ -137,11 +178,13 @@ body .underline {
 nav ul {
   text-align: center;
 }
+
 nav ul li {
   display: inline-block;
   padding: 18px 40px;
   cursor: pointer;
 }
+
 nav ul li a {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
@@ -149,6 +192,7 @@ nav ul li a {
   text-align: left;
   color: #707070;
 }
+
 nav ul li.active {
   background-color: #f6f6f6;
   border-top: 2px solid #ee5d2b;
@@ -162,85 +206,100 @@ nav ul li.active {
   width: 100%;
   height: 70vh;
   color: #ffffff;
+  overflow-x: hidden;
 }
+
 #banner .title {
   text-transform: uppercase;
   margin: 0;
   font-size: 14px;
   padding-bottom: 10px;
 }
+
 #banner .quote {
   font-size: 40px;
   width: 390px;
   margin: 0;
   padding-bottom: 10px;
 }
+
 #banner .primary-btn {
   margin: 10px 0;
 }
 
 #banner .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 #brand-highlight {
-  background-color: #E2E2E2;
+  background-color: #e2e2e2;
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #brand-highlight h1 {
   color: #707070;
 }
 
 #about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 10px;
-  max-height: 350px;
-  background-image: url("../assets/pattern2.png");
-  background-repeat: repeat;
-  background-size: 70%;
+  background: url("../assets/Man-PNG-Pic.png") left top no-repeat, url("../assets/pattern.png") repeat;
+  background-size: 300px 100px, cover;
   width: 100%;
-  height: auto;
+  height: 500px;
 }
+
 #about-us .about-img,
 #about-us .about-desc {
   width: 50%;
   text-align: left;
 }
+
 #about-us .about-img .title,
 #about-us .about-desc .title {
   text-align: left;
 }
+
 #about-us .about-img p,
 #about-us .about-desc p {
   width: 80%;
 }
+
 #about-us .about-img img {
   width: 500px;
-}
-
-#about-us .container .about-img {
-  z-index: 99;
-}
-
-#about-us .container .about-desc {
-  text-align: left;
-}
-
-#about-us .container .about-desc .title {
-  color: #4b4b4b;
-}
-
-#about-us .container .about-desc p {
-  color: #707070;
 }
 
 #why-choose-us {
@@ -250,29 +309,52 @@ nav ul li.active {
   width: 100%;
   height: auto;
   color: #ffffff;
+  overflow-x: hidden;
 }
+
 #why-choose-us .blue-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #why-choose-us .blue-overlay .title {
   color: #ffffff;
   padding-top: 30px;
 }
+
 #why-choose-us .blue-overlay .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 #why-choose-us .blue-overlay .container .card {
   width: 33.33%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 40px;
   padding: 10px 20px;
   text-align: center;
 }
+
 #why-choose-us .blue-overlay .container .card .img-box {
   width: 80px;
   height: 80px;
@@ -281,10 +363,17 @@ nav ul li.active {
   border: 1px dashed #222222;
   padding: 10px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #why-choose-us .blue-overlay .container .card .img-box img {
   width: 70px;
   height: auto;
@@ -296,29 +385,50 @@ nav ul li.active {
   background-size: 70%;
   width: 100%;
   height: auto;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 #our-system .title {
   padding-top: 30px;
 }
+
 #our-system .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #our-system .container .card {
   width: 33.33%;
-  box-sizing: border-box;
-  margin: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px;
   padding: 10px 20px;
   text-align: center;
   border-radius: 25px;
   background-color: #ffffff;
   margin-top: 90px;
 }
+
 #our-system .container .card .img-box {
   width: 80px;
   height: 80px;
@@ -327,42 +437,57 @@ nav ul li.active {
   border: 1px dashed #222222;
   padding: 10px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: -60px;
 }
+
 #our-system .container .card .img-box img {
   height: 50px;
 }
+
 #our-system .container .card .count {
   font-size: 2em;
   line-height: 2px;
   font-weight: 600;
 }
+
 #our-system .container .card h3 {
   font-weight: 300;
 }
+
 #our-system .container .bg-red {
-  border: 1px dashed #FF0000;
-  background-color: #FFF3F3;
+  border: 1px dashed #ff0000;
+  background-color: #fff3f3;
 }
+
 #our-system .container .bg-blue {
-  border: 1px dashed #0583F2;
-  background-color: #EEF6FE;
+  border: 1px dashed #0583f2;
+  background-color: #eef6fe;
 }
+
 #our-system .container .bg-green {
-  border: 1px dashed #42B84D;
-  background-color: #EFFFF1;
+  border: 1px dashed #42b84d;
+  background-color: #effff1;
 }
+
 #our-system .container .theme-green {
-  color: #42B84D;
+  color: #42b84d;
 }
+
 #our-system .container .theme-red {
-  color: #FF0000;
+  color: #ff0000;
 }
+
 #our-system .container .theme-blue {
-  color: #0583F2;
+  color: #0583f2;
 }
 
 #parents-say {
@@ -373,6 +498,10 @@ nav ul li.active {
   background-origin: border-box;
   background-blend-mode: overlay;
   text-align: center;
+}
+
+#parents-say .title {
+  color: #ffffff;
 }
 
 #parents-say .container {
@@ -395,7 +524,7 @@ nav ul li.active {
   width: 33.33%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 40px;
+  margin: 10px;
   padding: 30px 20px;
   text-align: center;
   border-radius: 25px;
@@ -431,12 +560,18 @@ nav ul li.active {
   padding: 20px 0 10px;
 }
 
+.slick-dots li button:before {
+  color: #ffffff !important;
+  font-size: 10px !important;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
+
 .container::after {
   clear: both;
 }
@@ -446,15 +581,50 @@ nav ul li.active {
     width: 750px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .nav-cta {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #why-choose-us .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #why-choose-us .container .card {
+    min-width: 250px;
+    margin: 10px !important;
+  }
+  #our-system .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #our-system .container .card {
+    min-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .brand .call-cta {
+    display: none;
+  }
+  #banner .quote {
+    font-size: 30px;
+    width: 90vw;
+  }
+}
 /*# sourceMappingURL=index.css.map */

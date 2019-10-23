@@ -62,32 +62,50 @@
     <section id="banner">
         <div class="overlay">
             <div class="container">
-                <p class="title">Welcome to stellar Brainz</p>
-                <h2 class="quote">Where learning is as fluid as water</h2>
-                <button class="primary-btn">enroll now</button>
+                <div class="banner-slide">
+                    <p class="title">Welcome to stellar Brainz</p>
+                    <h2 class="quote">Where learning is as fluid as water</h2>
+                    <button class="primary-btn">enroll now</button>
+                </div>
+                <div class="banner-slide">
+                    <p class="title">Welcome to stellar Brainz</p>
+                    <h2 class="quote">Smooth seas do not make skillful sailors.</h2>
+                    <button class="primary-btn">enroll now</button>
+                </div>
+                <div class="banner-slide">
+                    <p class="title">Welcome to stellar Brainz</p>
+                    <h2 class="quote">Education is not the filling of a pot but the lighting of a fire</h2>
+                    <button class="primary-btn">enroll now</button>
+                </div>
+                <div class="banner-slide">
+                    <p class="title">Welcome to stellar Brainz</p>
+                    <h2 class="quote">Anything worth doing well is worth doing poorly at first</h2>
+                    <button class="primary-btn">enroll now</button>
+                </div>
             </div>
         </div>
     </section>
     <section id="brand-highlight">
-        <marquee scrollamount=5><h1> <span class="highlight">The Stellar Brainz&nbsp;</span>is an award winning weekly magazine for children
-            aged between 4 and 15 years...</h1></marquee>
+        <marquee scrollamount="5">
+            <h1> <span class="highlight">The Stellar Brainz&nbsp;</span>is an award winning weekly magazine for children
+                aged between 4 and 15 years...</h1>
+        </marquee>
     </section>
-    <section id="about-us">
-
-            <div class="about-img">
-                    <img src="./assets/Man-PNG-Pic.png" alt="">
-                </div>
-            <div class="about-desc">
-                <h2 class="title">About Us</h2>
-                <div class="underline"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-            </div>
-    </section>
+    <!-- <section id="about-us">
+        <div class="about-img">
+            <img src="" alt="">
+        </div>
+        <div class="about-desc">
+            <h2 class="title">About Us</h2>
+            <div class="underline"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.</p>
+        </div>
+    </section> -->
     <section id="why-choose-us">
         <div class="blue-overlay">
             <h2 class="title">Why Choose us?</h2>
@@ -188,13 +206,61 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('#parents-say .container').slick({
-                slidesToShow: 3,
-                dots: true,
-                centerMode: true,
-            });
-        });</script>
+        $('#banner .container').slick({
+            dots: true,
+            centerMode: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            fade: true,
+            cssEase: 'linear',
+            autoplaySpeed: 5000,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true
+                    }
+                },
+            ]
+        });
+        // parent section carousel
+        $('#parents-say .container').slick({
+            dots: true,
+            centerMode: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
 </body>
 
 </html>
