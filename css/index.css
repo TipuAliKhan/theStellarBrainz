@@ -30,7 +30,8 @@ body .overlay {
 body .blue-overlay {
   width: 100%;
   height: 100%;
-  background-color: #0470e4bf;
+  background-color: #0470e4a3;
+  padding: 30px 0 10px;
 }
 body .highlight {
   color: #ee5d2b;
@@ -226,6 +227,22 @@ nav ul li.active {
   width: 500px;
 }
 
+#about-us .container .about-img {
+  z-index: 99;
+}
+
+#about-us .container .about-desc {
+  text-align: left;
+}
+
+#about-us .container .about-desc .title {
+  color: #4b4b4b;
+}
+
+#about-us .container .about-desc p {
+  color: #707070;
+}
+
 #why-choose-us {
   background-image: url("../assets/pattern.png");
   background-repeat: repeat;
@@ -346,6 +363,72 @@ nav ul li.active {
 }
 #our-system .container .theme-blue {
   color: #0583F2;
+}
+
+#parents-say {
+  background-image: url("../assets/parent.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-blend-mode: overlay;
+  text-align: center;
+}
+
+#parents-say .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#parents-say .container .card {
+  width: 33.33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 40px;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#parents-say .container .card img {
+  margin: 0 auto;
+}
+
+#parents-say .container .card .name {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4b4b4b;
+  padding: 10px 0 0;
+}
+
+#parents-say .container .card .designation {
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  color: #aeaeae;
+}
+
+#parents-say .container .card .intro {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.33;
+  color: #4b4b4b;
+  padding: 20px 0 10px;
 }
 
 .container {
